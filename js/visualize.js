@@ -1,4 +1,5 @@
-// The code below has been adapted from ..............
+
+// The code below has been adapted from https://github.com/vishalpandey2192/DV_Project
 
  function tooltip_render(tooltip_data) {
     var text = "<h5 style = 'font-size: 40px'>" + tooltip_data.state + "</h5>";
@@ -48,7 +49,7 @@ function createMap(option, json, data) {
 
     // D3 Projection
     var projection = d3.geoAlbersUsa()
-                   .translate([1700 / 2, 500 / 2]) // translate to center of screen
+                   .translate([1000 / 2, 500 / 2]) // translate to center of screen
                    .scale([1000]); // scale things down so see entire US
    
     // Define path generator
